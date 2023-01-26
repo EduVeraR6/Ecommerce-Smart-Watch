@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root{
+    --color-de-fondo:#383638;
+    --color-de-letra:#8B8E99;
+    --color-letra-titulos:#ffff;
+    --fuente-de-letra: 'Poppins';
+    --tamaño-de-letra:16px;
+    --tamaño-letra-titulos: 64px;
+    --color-fondo-productos:#F6F6F6;
+}
+
+.cabecera{
+    background: rgb(56,54,56);
+    background: linear-gradient(90deg, rgba(56,54,56,1) 7%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 100%);
+    color:var(--color-letra-titulos);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 150px;
+}
+
+.menu-navegacion{
+    width: 150vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo span{
+    font-size: var(--tamaño-de-letra);
+    font-family: var(--fuente-de-letra);
+
+}
+.logo i{
+    margin-right: 10px;
+    width: 27px;
+    height: 27px;
+}
+
+.enlaces{
+    display: flex;
+    width: auto;
+}
+
+.enlaces a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--color-de-letra);
+    font-size: var(--tamaño-de-letra);
+    font-family: var(--fuente-de-letra);
+}
+
+.iconos-nav{
+    width: 100px;
+}
+
+.iconos-nav i{
+    margin-right: 10px;
+    width: 27px;
+    height: 27px;
+}
+
+/*Contenido Cabecera */
+
+.info-cabecera{
+    width: 150vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+}
+.info-cabecera img{
+    width: 461px;
+    height: 563px;
+}
+.contenido{
+    width: 457px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+
+.contenido h1{
+    font-size: var(--tamaño-letra-titulos);
+    color: var(--color-letra-titulos);
+    font-weight: bold;
+    font-family: var(--fuente-de-letra);
+    line-height: 80px;
+}
+
+.contenido p {
+    font-size: var(--tamaño-de-letra);
+    font-family: var(--fuente-de-letra);
+    color: var(--color-de-letra);
+    line-height: 20px;
+    text-align: justify;
+}
+
+.buscador-contenido{
+    width: auto;
+    height: 45px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-letra-titulos);
+    padding: 10px;
+}
+
+.buscador-contenido i{
+    text-align: center;
+    width: 50px;
+    color: blue;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.buscador-contenido input{
+    height: 50px;
+    width: 250px;
+    font-size: var(--tamaño-de-letra);
+    font-family: var(--fuente-de-letra);
+    text-decoration: none;
+    color: var(--color-de-letra);
+    color: #383638;
+    border: none;
+
+}
+
+.buscador-contenido button{
+    background-color: #3858D6;
+    padding: 25px;
+    width: 125px;
+    height: 50px;
+    line-height: 0;
+    font-family: var(--fuente-de-letra);
+    font-size: var(--tamaño-de-letra);
+    color: var(--color-letra-titulos);
+    font-weight: 600;
+    border-radius: 9px;
+    text-align: center;
+}
+
+/*Tipos de Relojes*/
+
+.muestras{
+    padding-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.cajas{
+    display: flex;
+    gap: 25px;
+    background-color: var(--color-fondo-productos);
+    padding: 30px;
+    border-radius: 22px;
+    justify-content: center;
+    font-family: var(--fuente-de-letra);
+}
+
+.cajas h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cajas p{
+    text-align: justify;
+    letter-spacing: 0;
+    color: var(--color-de-letra);
+}
+
+.apple{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.xiaomi{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fitbit{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Productos*/
+
+.main-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulos-productos{
+    margin-top: 150px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos-productos span{
+    font-family: var(--fuente-de-letra);
+    font-size: var(--fuente-de-letra);
+    color: #3858D6;
+}
+
+.titulos-productos h2{
+    font-size: 36px;
+    font-family: var(--fuente-de-letra);
+
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--fuente-de-letra);
+}
+
+.productos p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.productos span{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.span-productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#span-oferta{
+    font-size: 16px;
+    color: #8B8E99;
+    font-family: var(--fuente-de-letra);
+    text-decoration: line-through;
+}
+.productos-imagen{
+    padding: 30px;
+    background-color: var(--color-fondo-productos);
+}
+
+.boton-productos{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-productos button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #3858D6;
+    color: #ffff;
+    font-family: var(--fuente-de-letra);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*Comentarios*/
+
+.section-comentarios{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuente-de-letra);
+    align-items: center;
+    justify-content: center;
+}
+
+.titulos-comentarios{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulos-comentarios span{
+    font-size: 16px;
+    color:#3858D6 ;
+}
+
+.titulos-comentarios h2{
+    font-size: 36px;
+}
+
+.reseñas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.persona{
+    width: 524px;
+    height: 239px;
+    background-color: #F6F6F6;
+    border-radius: 22px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.persona-comentario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.persona-comentario span{
+    font-size: 24px;
+    font-weight: bold;
+}
+.persona-comentario p{
+    width: 300px;
+    color: var(--color-de-letra);
+}
+
+.persona-comentario .estrellas{
+    margin-top: 10px;
+}
+
+.puntos{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.punto{
+    width: 18px;
+    height: 18px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.diferente{
+    background-color: #3858D6;
+}
+
+/*Subscribete -Email*/
+
+.subscribete{
+    width: 75%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 20px;
+    gap: 100px;
+    border-radius: 22px;
+    font-family: var(--fuente-de-letra);
+}
+
+.subscribete img{
+    margin-right: 75px;
+    width: 272px;
+    height: 301px;
+}
+
+.email-subscribete{
+    width: 300px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-subscribete h2{
+    font-size: 36px;
+    width: 500px;
+}
+.email-subscribete span{
+    width: 500px;
+    color: #8B8E99;
+    font-size: var(--fuente-de-letra);
+}
+
+.input-email{
+    background-color: #ffff;
+    font-size: var(--tamaño-de-letra);
+    border-radius: 15px;
+    width: 443px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-email input{
+    margin-left: 20px;
+    width: 250px;
+}
+.input-email button{
+    cursor: pointer;
+    background-color: #3858D6;
+    width: 131px;
+    height: 45px;
+    border-radius: 9px;
+    color: #ffff;
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #0b0b0b;
+    height: 65px;
+    font-family: var(--fuente-de-letra);
+    font-size: var(--tamaño-de-letra);
+    color: #ffff;
+}
